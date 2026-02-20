@@ -53,6 +53,6 @@ These tools should already be installed from previous labs. If your environment 
 
 * Open a terminal in VS Code and record the output and observations from this exercise in a file named: `CSDO1010_LAB_05_REPORT_LASTNAME_FIRSTNAME`
 
-* For each step, explain what the pipeline is doing, why it runs automatically, and how it supports safe software delivery.
+* For each step, explain what the pipeline is doing, why it runs automatically, and how it supports safe infrastructure delivery.
 
 * When complete, submit the report via Moodle.
