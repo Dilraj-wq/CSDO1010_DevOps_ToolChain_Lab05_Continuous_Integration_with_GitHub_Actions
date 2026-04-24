@@ -4,7 +4,7 @@
     {
       "Effect": "Allow",
       "Principal": {
-        "Federated": "arn:aws:iam::<ACCOUNT_ID>:oidc-provider/token.actions.githubusercontent.com"
+        "Federated": "arn:aws:iam::419474893650:oidc-provider/token.actions.githubusercontent.com"
       },
       "Action": "sts:AssumeRoleWithWebIdentity",
       "Condition": {
@@ -13,10 +13,10 @@
         },
         "StringLike": {
           "token.actions.githubusercontent.com:sub": [
-            "repo:<OWNER>/<REPO>:environment:<ENVIRONMENT>",
-            "repo:<OWNER>/<REPO>:ref:refs/heads/main",
-            "repo:<OWNER>/<REPO>:ref:refs/tags/*",
-            "repo:<OWNER>/<REPO>:pull_request"
+            "repo:YorkU-SCS-Cloud-Ops/CSDO1010_DevOps_ToolChain_Lab05_Continuous_Integration_with_GitHub_Actions:environment:LAB05",
+            "repo:YorkU-SCS-Cloud-Ops/CSDO1010_DevOps_ToolChain_Lab05_Continuous_Integration_with_GitHub_Actions:ref:refs/heads/main",
+            "repo:YorkU-SCS-Cloud-Ops/CSDO1010_DevOps_ToolChain_Lab05_Continuous_Integration_with_GitHub_Actions:ref:refs/tags/*",
+            "repo:YorkU-SCS-Cloud-Ops/CSDO1010_DevOps_ToolChain_Lab05_Continuous_Integration_with_GitHub_Actions:pull_request"
           ]
         }
       }
