@@ -168,7 +168,7 @@ Ties in SGs, key pair, user-data, and IAM profile.
 **** **** **** **** **** **** **** **** **** **** **** ****/
 resource "aws_instance" "ansible" {
   ami                    = data.aws_ami.ubuntu.id
-  instance_type          = "t2.micro"
+  instance_type          = "t3.micro"
   subnet_id              = aws_subnet.lab_subnet.id
   vpc_security_group_ids = [aws_security_group.lab_sg.id]
   user_data              = file("${path.module}/templates/ansible.bash")
